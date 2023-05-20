@@ -5,38 +5,37 @@
     margin: 0%;
 }
 
-/********* fonts *********/
+body {
+    background-image: url(images/1hede.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 h1 {
     font-family: 'Genos', sans-serif;
-    font-size: 96px;
-    color: #376A46;
+    font-size: 200px;
+    color: #FFFFFF;
 }
 
 h2 {
-    font-family: 'Jura', sans-serif;
-    font-size: 64px;
-    color: #697F3E;
-    margin-bottom: 20px;
+    font-family: 'Genos', sans-serif;
+    font-size: 96px;
+    color: #FFFFFF;
 }
 
 h3 {
     font-family: 'Jura', sans-serif;
-    font-size: 46px;
+    font: 50px;
     color: #376A46;
 }
 
-h4 {
+p {
     font-family: 'Jura', sans-serif;
-    font-size: 32px;
-    color: #FFFFFF;
-    text-decoration: none;
+    font: 50px;
+    color: #376A46;
 }
 
-p {
-    font-family: 'Plus Jakarta San', sans-serif;
-    font-size: 24px;
-    color: #000000;
-}
 
 /******************************************** Header ********************************************/
 
@@ -132,7 +131,6 @@ nav a:hover {
     color: #FFFFFF;
 }
 
-
 .underline-effect::after {
     content: "";
     position: absolute;
@@ -154,6 +152,7 @@ nav .dropdown-menu a {
     color: #FFFFFF;
 }
 
+
 /******** Knap ********/
 #planlaeg {
     background-color: #6C2960;
@@ -174,137 +173,63 @@ nav .dropdown-menu a {
 }
 
 
-
 /******************************************** Main ********************************************/
-#topphoto {
-    /* margin-top: 75px; */
 
-    width: 100%;
-    height: 650px;
-    margin-bottom: 50px;
+main {
+    margin: 150px;
 }
 
-#content {
-    margin-left: 150px;
-    margin-right: 150px;
+
+#forside {
+    margin-bottom: 150px;
 }
 
 .box1 {
     display: flex;
     justify-content: left;
-    flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
+    margin-bottom: 200px;
 }
 
 .box2 {
     display: flex;
-    justify-content: end;
-    flex-direction: column;
-}
-
-.sitephoto {
-    height: 563px;
-    width: 1380px;
-
-    border-radius: 10px;
-
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-
-
-/******** Sticky menu ********/
-.fourcards {
-    position: sticky;
-    top: 75px;
-
-    text-decoration: none;
-
-    display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
-
-
-    height: 300px;
-    width: 100%;
-
-    background-color: #376A46;
-    opacity: 0.5;
-
-    z-index: -1;
+    margin-bottom: 200px;
 }
 
-#pic1 {
-    background-image: url(images/hede7.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-#pic2 {
-    background-image: url(images/kanon.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-#pic3 {
-    background-image: url(images/whisky.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-#pic4 {
-    background-image: url(images/oeko.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-.fourcards section div {
+#plan {
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    margin: auto;
+    margin-top: 50px;
 }
+
+h2 {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+
+/******** Knap ********/
+#knap {
+    background-color: #6C2960;
+    color: white;
+
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+
+    transition: 0.5s;
+
+    color: white;
+    font-family: 'Jura', sans-serif;
+    text-decoration: none;
+}
+
+#knap:hover {
+    background-color: #829B6A;
+}
+
 
 /******************************************** Footer ********************************************/
 footer {
@@ -330,7 +255,7 @@ footer p {
 }
 
 .kntkt img {
-    margin-right: 15px;
+   margin-right:15px;
 }
 
 #scl a {

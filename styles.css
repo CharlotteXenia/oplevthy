@@ -28,17 +28,40 @@ h3 {
 h4 {
     font-family: 'Jura', sans-serif;
     font-size: 32px;
+    /* color: #FFFFFF; */
     color: #FFFFFF;
     text-decoration: none;
 }
 
 p {
     font-family: 'Plus Jakarta San', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #000000;
 }
 
+a {
+    text-decoration: none;
+}
+
 /******************************************** Header ********************************************/
+#compheader {
+    height: 75px;
+    width: 100%;
+
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
 
 nav {
     width: 900px;
@@ -60,25 +83,6 @@ nav a {
 
 nav a:hover {
     color: #6C2960;
-}
-
-#compheader {
-    height: 75px;
-    width: 100%;
-
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #000000;
-    background-color: #FFFFFF;
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000;
 }
 
 
@@ -132,8 +136,7 @@ nav a:hover {
     color: #FFFFFF;
 }
 
-
-.underline-effect::after {
+.dropdown a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -144,7 +147,7 @@ nav a:hover {
     transition: width 0.5s ease;
 }
 
-.underline-effect:hover::after {
+.dropdown a:hover::after {
     width: 100%;
 }
 
@@ -173,137 +176,104 @@ nav .dropdown-menu a {
     background-color: #829B6A;
 }
 
-
-
 /******************************************** Main ********************************************/
 #topphoto {
-    /* margin-top: 75px; */
-
     width: 100%;
     height: 650px;
-    margin-bottom: 50px;
 }
 
 #content {
+    margin-top: 50px;
     margin-left: 150px;
     margin-right: 150px;
 }
 
 .box1 {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    /* align-items: center; */
+text-align: left;
 }
 
 .box2 {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
+    height: auto;
+    width: 100%;
+    text-align: right;
 }
 
 .sitephoto {
     height: 563px;
-    width: 1380px;
+    width: 100%;
 
     border-radius: 10px;
-
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
+.seemore a {
+    font-family: 'Plus Jakarta San', sans-serif;
+    font-size: 18px;
+    color: #829B6A;
+    text-decoration: none;
+}
 
-/******** Sticky menu ********/
+.seemore a:hover {
+    color: #6C2960;
+}
+
+/******* Sticky menu *******/
+
+.fourcards div {
+    height: 175px;
+    width: 100%;
+    background-color: rgba(55, 106, 70, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .fourcards {
     position: sticky;
     top: 75px;
-
-    text-decoration: none;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
-    height: 300px;
     width: 100%;
-
-    background-color: #376A46;
-    opacity: 0.5;
-
-    z-index: -1;
+    flex-wrap: wrap;
 }
 
-#pic1 {
-    background-image: url(images/hede7.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
+.menupic {
+    height: 125px;
     width: 250px;
 
-    z-index: 1000;
+    border-radius: 10px;
+    
+    margin-right: 15px;
+    margin-left: 15px;
+
+    opacity: 75%;
 }
 
-#pic2 {
-    background-image: url(images/kanon.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.snglcrd {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-#pic3 {
-    background-image: url(images/whisky.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-#pic4 {
-    background-image: url(images/oeko.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 250px;
-    width: 250px;
-
-    z-index: 1000;
-}
-
-.fourcards section div {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
 
-    margin: auto;
+.snglcrd:hover {
+    transform: scale(1.08);
+    opacity: 100%;
+    transition: 0.7s;
+}
+
+.snglcrd h4 {
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    text-align: center; 
+    font-size: 36px; 
+    /* background-color: rgba(130, 155, 106, 0.5); */
 }
 
 /******************************************** Footer ********************************************/
@@ -335,4 +305,24 @@ footer p {
 
 #scl a {
     margin-left: 15px;
+}
+
+/******************************************** Media Query ********************************************/
+@media screen and (min-width:1150px) {
+    #mobilheader {
+        display: none;
+    }  
+}
+
+@media screen and (max-width:1150px) {
+    #pcheader {
+        display: none;
+    }
+
+    #mobilheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+    }
 }

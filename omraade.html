@@ -12,45 +12,74 @@
 
 <body>
     <header>
-        <a id="complogo" href="index.html"><img class="logo" src="images/logocomputerweb.gif" alt="OplevThy"></a>
-        </div>
+        <a id="complogo" href="index.html"><img class="logo" src="images/compimg/logocomputerweb.gif"
+                alt="OplevThy"></a>
+        <a id="moblogo" href="index.html"><img class="logo" src="images/mobimg/logomobilweb.gif"
+                alt="OplevThy"></a>        
 
         <div id="compheader">
-            <nav>
+            <nav id="compnav">
                 <a href="omraade.html">Området og naturen</a>
                 <div class="dropdown">
                     <a href="oplev.html" class="btn">Oplevelser</a>
                     <div class="dropdown-menu">
-                        <a class="underline-effect" href="#">Udendørs</a>
-                        <a class="underline-effect" href="#">Indendørs</a>
-                        <a class="underline-effect" href="#">Voksne</a>
-                        <a class="underline-effect" href="oplevboern.html">Børn</a>
+                        <a href="#">Udendørs</a>
+                        <a href="#">Indendørs</a>
+                        <a href="#">Voksne</a>
+                        <a href="oplevboern.html">Børn</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a href="spis.html" class="btn">Spisesteder</a>
                     <div class="dropdown-menu">
-                        <a class="underline-effect" href="rest.html">Restaurant</a>
-                        <a class="underline-effect" href="#">Café</a>
-                        <a class="underline-effect" href="#">Grill</a>
+                        <a href="rest.html">Restaurant</a>
+                        <a href="#">Café</a>
+                        <a href="#">Grill</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a href="overnat.html" class="btn">Overnatning</a>
                     <div class="dropdown-menu">
-                        <a class="underline-effect" href="#">Hotel/kro</a>
-                        <a class="underline-effect" href="#">Hostel</a>
-                        <a class="underline-effect" href="#">Camping</a>
-                        <a class="underline-effect" href="#">Udendørs</a>
+                        <a href="#">Hotel/kro</a>
+                        <a href="#">Hostel</a>
+                        <a href="#">Camping</a>
+                        <a href="#">Udendørs</a>
                     </div>
                 </div>
                 <a href="komrundt.html">Kom rundt</a>
 
                 <a id="planlaeg" href="planlaeg.html">Planlæg</a>
             </nav>
-        </div>
-    </header>
 
+            <nav id="tabmobnav">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-links">
+                    <a href="#"></a>
+                    <a href="omraade.html">Området og naturen</a>
+                    <a href="oplev.html">Oplevelser</a>
+                    <a href="spis.html">Spisesteder</a>
+                    <a href="overnat.html">Overnatning</a>
+                    <a href="komrundt.html">Kom rundt</a>
+                    <a href="planlaeg.html">Planlæg min tur</a>
+                </div>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+                var navbarLinks = document.querySelector('.navbar-links');
+                var overlay = document.querySelector('.overlay');
+                navbarLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+            }
+        </script>
+    </header>
 
     <main>
         <div><img id="topphoto" src="images/compimg/topphoto/hede1.1.jpg" alt="klitplantage"></div> <!--topphoto-->
@@ -58,43 +87,66 @@
         <div id="content">
             <div class="box1">
                 <h1>Området og naturen</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit ut lacus
-                    convallis
-                    elementum. Duis condimentum massa vitae purus dictum, id congue magna tempor. Suspendisse imperdiet
-                    id
-                    lectus et fermentum.
-
-                    Quisque vulputate faucibus diam eget laoreet. Mauris imperdiet interdum iaculis. In hac habitasse
-                    platea
-                    dictumst. Cras accumsan lectus nisl, vitae fringilla quam laoreet eu.
-
-                    Integer sed dui ac nunc volutpat laoreet. Duis condimentum, eros at sollicitudin elementum, odio
-                    magna
-                    eleifend lacus, ut facilisis ex sapien ultricies mauris.
-                    Nulla facilisi. Ut vehicula rutrum orci, at semper purus interdum ut.</p>
+                <p>Nationalparken er et sammenhængende naturområde, der omfatter mennesker, planter og dyr. I den
+                    nordlige del af nationalparken finder vi Hanstholm Vildtreservat, hvor der lever mere end 30
+                    forskellige fuglearter. Det beskyttede område er også et fristed for odderen, som har fundet sin
+                    plads ved søerne.
+                    <br><br>
+                    Agger Tange, der ligger i den sydlige del af nationalparken, er et af Nordeuropas vigtigste
+                    hvilesteder for trækfugle. Området er blevet anerkendt som et internationalt
+                    fuglebeskyttelsesområde.
+                    <br><br>
+                    Nationalparken spiller også en vigtig rolle i dansk historie. Her kan man finde adskillige
+                    bronzealdergravhøje, og de tyske bunkere langs kysten minder os om tiden under den tyske besættelse,
+                    hvor Danmark var i frontlinjen og frygtede et angreb fra de allierede styrker under Anden
+                    Verdenskrig.
+                    <br><br>
+                    Naturen i Nationalpark Thy er konstant i forandring, og vejret skifter fra kraftig blæst med havets
+                    salte luft ved kysterne til milde briser i de fugtige skovområder. Uanset hvor du bevæger dig rundt
+                    i parken, kan du mærke områdets storhed og betydning.
+                </p>
             </div> <!--textbox1-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/hede3.jpg" alt="klitplantage"></div> <!--photo1-->
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/hede3.jpg" alt="klitplantage"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/hedehustab.jpg" alt="klitplantage"></div>
+            <div><img class="mobsitephoto" src="images/mobimg/sitephoto/hedehusmob.jpg" alt="klitplantage"></div>
+
 
             <div class="box2">
                 <h2>Bulbjerg</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit ut lacus
-                    convallis
-                    elementum. Duis condimentum massa vitae purus dictum, id congue magna tempor. Suspendisse imperdiet
-                    id
-                    lectus et fermentum.
-
-                    Quisque vulputate faucibus diam eget laoreet. Mauris imperdiet interdum iaculis. In hac habitasse
-                    platea
-                    dictumst. Cras accumsan lectus nisl, vitae fringilla quam laoreet eu.
-
-                    Integer sed dui ac nunc volutpat laoreet. Duis condimentum, eros at sollicitudin elementum, odio
-                    magna
-                    eleifend lacus, ut facilisis ex sapien ultricies mauris.
-                    Nulla facilisi. Ut vehicula rutrum orci, at semper purus interdum ut.</p>
+                <p>Bulbjerg, også kendt som "Jyllands skulder", er den eneste klippe på Jylland. Udover Bornholm er det
+                    også fastlandets eneste fuglefjeld. Fra klippens top kan man, hvis vejret er klart, se både Rubjerg
+                    Knude Fyr og Hanstholm.
+                    <br><br>
+                    Udover den fantastiske udsigt over Vesterhavet, er limstensklippen også hjemsted for mange
+                    forskellige fuglearter, herunder 500 par rider, suler, kjover, lunder og mallemukker, der forsøger
+                    at yngle på klippen.
+                    <br><br>
+                    Bulbjerg er konstant udsat for erosion fra Vesterhavets kraftige bølger, der gradvist nedbryder
+                    klippen og spreder kalkstensstykkerne på den tilstødende strand.
+                    <br><br>
+                    Tidligere var Bulbjerg en ø, der var omgivet af havet og udgjorde en del af Thy, før havet trak sig
+                    tilbage. I vikingetiden blev klippen brugt som et pejlemærke, der markerede åbningen til
+                    Vesterhavet. Vikingeskibe sejlede fra Aggersborg op ad Limfjorden mod Vust og nåede til sidst
+                    Bulbjerg. I det 12. århundrede sandede ruten imidlertid til, og Limfjorden blev til en fjord.
+                    <br><br>
+                    Indtil 1978 stod der endnu en klippe ved navn Skarreklit (16 meter høj) ved siden af Bulbjerg. Den
+                    var opkaldt efter skarven, der havde bosat sig på klippen. Under en storm væltede klippen dog, og i
+                    dag når den kun lige op til vandoverfladen.
+                    <br><br>
+                    I år 1907 blev der opført et badehotel ved Bulbjerg, men under 2. verdenskrig besatte tyskerne
+                    badehotellet og byggede en radiopejle- og radarstation på stedet. Mod slutningen af besættelsen
+                    valgte de at sprænge badehotellet i luften, da det kunne bruges som pejlemærke fra havet.
+                    <br><br>
+                    Der er også en udstillingsbunker ved Bulbjerg, der fungerer som et gratis lille museum og er åbent i
+                    dagtimerne. Her kan man læse om Bulbjergs geologi, fuglefjeldet, besættelsestiden og
+                    kulturhistorien.
+                </p>
             </div> <!--textbox2-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/bulbjerg4.jpg" alt="Bulbjerg"></div> <!--photo2-->
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/bulbjerg4.jpg" alt="Bulbjerg"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/hedehustab.jpg" alt="Bulbjerg"></div>
+            <div><img class="mobsitephoto" src="images/mobimg/sitephoto/hedehusmob.jpg" alt="Bulbjerg"></div>
 
             <div class="box1">
                 <h2>Klitplantagerne</h2>
@@ -114,10 +166,12 @@
                     Nulla facilisi. Ut vehicula rutrum orci, at semper purus interdum ut.</p>
             </div> <!--textbox3-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/hede8.jpg" alt="klitplantage"></div> <!--photo3-->
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/hede8.jpg" alt="klitplantage"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/bulbjergstitab.jpg" alt="klitplantage"></div>
+            <div><img class="mobsitephoto" src="images/mobimg/sitephoto/bulbjergstimob.jpg" alt="klitplantage"></div>
 
             <div class="box2">
-                <h2>Hanvejle</h2>
+                <h2>Han Vejle</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit ut lacus
                     convallis
                     elementum. Duis condimentum massa vitae purus dictum, id congue magna tempor. Suspendisse imperdiet
@@ -134,40 +188,42 @@
                     Nulla facilisi. Ut vehicula rutrum orci, at semper purus interdum ut.</p>
             </div> <!--textbox4-->
 
-            <div><img class="sitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
+            <div><img class="compsitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
+            <div><img class="tabsitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
+            <div><img class="mobsitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
         </div>
     </main>
 
-
     <footer>
-        <div>
-            <p><strong>OPLEV THY</strong></p>
-            <p>Poppelvej 1B</p>
-            <p>7760 Hurup Thy</p>
-        </div>
-
-        <div>
-            <div class="kntkt">
-                <img src="images/icons/mail.png" alt="mail">
-                <p>example@opth.dk</p>
+        <div class="comptabfoot">
+            <div>
+                <p><strong>OPLEV THY</strong></p>
+                <p>Poppelvej 1B</p>
+                <p>7760 Hurup Thy</p>
             </div>
-            <div class="kntkt">
-                <img src="images/icons/phone.png" alt="mail">
-                <p>+45 1234 5678</p>
+
+            <div>
+                <div class="kntkt">
+                    <img src="images/icons/mail.png" alt="mail">
+                    <p>example@opth.dk</p>
+                </div>
+                <div class="kntkt">
+                    <img src="images/icons/phone.png" alt="mail">
+                    <p>+45 1234 5678</p>
+                </div>
+            </div>
+
+            <div id="scl">
+                <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
+                <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
+            </div>
+
+            <div>
+                <img src="images/logofooter.gif" alt="OplevThy">
             </div>
         </div>
-
-        <div id="scl">
-            <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
-            <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
-            <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
-            <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
-        </div>
-
-        <div>
-            <img src="images/logofooter.gif" alt="OplevThy">
-        </div>
-
     </footer>
 
 </body>

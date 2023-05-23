@@ -12,43 +12,73 @@
 
 <body>
     <header>
-        <a id="complogo" href="index.html"><img class="logo" src="images/logocomputerweb.gif" alt="OplevThy"></a>
-        </div>
+        <a id="complogo" href="index.html"><img class="logo" src="images/compimg/logocomputerweb.gif"
+                alt="OplevThy"></a>
+        <a id="moblogo" href="index.html"><img class="logo" src="images/mobimg/logomobilweb.gif"
+                alt="OplevThy"></a>        
 
         <div id="compheader">
-            <nav>
+            <nav id="compnav">
                 <a href="omraade.html">Området og naturen</a>
                 <div class="dropdown">
                     <a href="oplev.html" class="btn">Oplevelser</a>
                     <div class="dropdown-menu">
-                        <a class="underline-effect" href="#">Udendørs</a>
-                        <a class="underline-effect" href="#">Indendørs</a>
-                        <a class="underline-effect" href="#">Voksne</a>
-                        <a class="underline-effect" href="oplevboern.html">Børn</a>
+                        <a href="#">Udendørs</a>
+                        <a href="#">Indendørs</a>
+                        <a href="#">Voksne</a>
+                        <a href="oplevboern.html">Børn</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a href="spis.html" class="btn">Spisesteder</a>
                     <div class="dropdown-menu">
-                        <a class="underline-effect" href="rest.html">Restaurant</a>
-                        <a class="underline-effect" href="#">Café</a>
-                        <a class="underline-effect" href="#">Grill</a>
+                        <a href="rest.html">Restaurant</a>
+                        <a href="#">Café</a>
+                        <a href="#">Grill</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a href="overnat.html" class="btn">Overnatning</a>
                     <div class="dropdown-menu">
-                        <a class="underline-effect" href="#">Hotel/kro</a>
-                        <a class="underline-effect" href="#">Hostel</a>
-                        <a class="underline-effect" href="#">Camping</a>
-                        <a class="underline-effect" href="#">Udendørs</a>
+                        <a href="#">Hotel/kro</a>
+                        <a href="#">Hostel</a>
+                        <a href="#">Camping</a>
+                        <a href="#">Udendørs</a>
                     </div>
                 </div>
                 <a href="komrundt.html">Kom rundt</a>
 
                 <a id="planlaeg" href="planlaeg.html">Planlæg</a>
             </nav>
+
+            <nav id="tabmobnav">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-links">
+                    <a href="#"></a>
+                    <a href="omraade.html">Området og naturen</a>
+                    <a href="oplev.html">Oplevelser</a>
+                    <a href="spis.html">Spisesteder</a>
+                    <a href="overnat.html">Overnatning</a>
+                    <a href="komrundt.html">Kom rundt</a>
+                    <a href="planlaeg.html">Planlæg min tur</a>
+                </div>
+            </nav>
+            <div class="overlay"></div>
         </div>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+                var navbarLinks = document.querySelector('.navbar-links');
+                var overlay = document.querySelector('.overlay');
+                navbarLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+            }
+        </script>
     </header>
 
     <main>
@@ -85,34 +115,35 @@
     </main>
 
     <footer>
-        <div>
-            <p><strong>OPLEV THY</strong></p>
-            <p>Poppelvej 1B</p>
-            <p>7760 Hurup Thy</p>
-        </div>
-
-        <div>
-            <div class="kntkt">
-                <img src="images/icons/mail.png" alt="mail">
-                <p>example@opth.dk</p>
+        <div class="comptabfoot">
+            <div>
+                <p><strong>OPLEV THY</strong></p>
+                <p>Poppelvej 1B</p>
+                <p>7760 Hurup Thy</p>
             </div>
-            <div class="kntkt">
-                <img src="images/icons/phone.png" alt="mail">
-                <p>+45 1234 5678</p>
+
+            <div>
+                <div class="kntkt">
+                    <img src="images/icons/mail.png" alt="mail">
+                    <p>example@opth.dk</p>
+                </div>
+                <div class="kntkt">
+                    <img src="images/icons/phone.png" alt="mail">
+                    <p>+45 1234 5678</p>
+                </div>
+            </div>
+
+            <div id="scl">
+                <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
+                <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
+            </div>
+
+            <div>
+                <img src="images/logofooter.gif" alt="OplevThy">
             </div>
         </div>
-
-        <div id="scl">
-            <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
-            <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
-            <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
-            <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
-        </div>
-
-        <div>
-            <img src="images/logofooter.gif" alt="OplevThy">
-        </div>
-
     </footer>
 
 </body>

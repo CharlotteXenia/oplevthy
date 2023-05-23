@@ -12,15 +12,13 @@
 
 <body>
     <header>
-        <a id="complogo" href="index.html"><img class="logo" src="images/logocomputerweb.gif" alt="OplevThy"></a>
-        </div>
-        <!-- <a id="tablogo" href="index.html"><img class="logo" src="images/logocomputerweb.gif" alt="OplevThy"></a>
-        </div> -->
-        <!-- <a id="moblogo" href="index.html"><img class="logo" src="images/logocomputerweb.gif" alt="OplevThy"></a>
-        </div> -->
+        <a id="complogo" href="index.html"><img class="logo" src="images/compimg/logocomputerweb.gif"
+                alt="OplevThy"></a>
+        <a id="moblogo" href="index.html"><img class="logo" src="images/mobimg/logomobilweb.gif"
+                alt="OplevThy"></a>        
 
         <div id="compheader">
-            <nav>
+            <nav id="compnav">
                 <a href="omraade.html">Området og naturen</a>
                 <div class="dropdown">
                     <a href="oplev.html" class="btn">Oplevelser</a>
@@ -52,7 +50,35 @@
 
                 <a id="planlaeg" href="planlaeg.html">Planlæg</a>
             </nav>
+
+            <nav id="tabmobnav">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-links">
+                    <a href="#"></a>
+                    <a href="omraade.html">Området og naturen</a>
+                    <a href="oplev.html">Oplevelser</a>
+                    <a href="spis.html">Spisesteder</a>
+                    <a href="overnat.html">Overnatning</a>
+                    <a href="komrundt.html">Kom rundt</a>
+                    <a href="planlaeg.html">Planlæg min tur</a>
+                </div>
+            </nav>
+            <div class="overlay"></div>
         </div>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+                var navbarLinks = document.querySelector('.navbar-links');
+                var overlay = document.querySelector('.overlay');
+                navbarLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+            }
+        </script>
     </header>
 
     <main>
@@ -90,8 +116,6 @@
             </div>
         </div>
 
-
-
         <div id="content">
             <div class="box1">
                 <h1>Oplevelser</h1>
@@ -118,7 +142,8 @@
                 <a href="#">Se muligheder &#8594;</a>
             </div> <!--textbox1-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/bulbjerg.jpg" alt="Bulbjerg"></div>
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/bulbjerg.jpg" alt="Bulbjerg"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/bulbjergvand.jpg" alt="Bulbjerg"></div>
 
             <div class="box2 seemore">
                 <section>
@@ -138,7 +163,8 @@
                 <a href="#">Se muligheder &#8594;</a>
             </div> <!--textbox2-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/strategi.jpg" alt="Kanon"></div>
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/strategi.jpg" alt="Kanon"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/strategitab.jpg" alt="Kanon"></div>
 
             <div class="box1 seemore">
                 <section>
@@ -157,7 +183,8 @@
                 <a href="#">Se muligheder &#8594;</a>
             </div> <!--textbox3-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/whisky2.jpg" alt="Thy Whisky"></div>
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/whisky2.jpg" alt="Thy Whisky"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/whiskytab.jpg" alt="Thy Whisky"></div>
 
             <div class="box2 seemore">
                 <section>
@@ -167,7 +194,8 @@
                         plukke din egen frugt, samt besøg hos en is-butik, hvor de producere is på mælk fra lokale
                         økologiske køer.
                         <br><br>
-                        Der er desuden mulighed for at besøge legeland og legepladser, spille minigolf og tage på troldejagt. Der er
+                        Der er desuden mulighed for at besøge legeland og legepladser, spille minigolf og tage på
+                        troldejagt. Der er
                         aktiviteter for børn i alle aldre og andre barnlige sjæle.
                     </p>
                     <br>
@@ -175,40 +203,44 @@
                 <a href="oplevboern.html">Se muligheder &#8594;</a>
             </div> <!--textbox4-->
 
-            <div><img class="sitephoto" src="images/compimg/sitephoto/saft.jpg" alt="Thy Økobær"></div>
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/saft.jpg" alt="Thy Økobær"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/safttab.jpg" alt="Thy Økobær"></div>
         </div>
+
+
 
     </main>
 
     <footer>
-        <div>
-            <p><strong>OPLEV THY</strong></p>
-            <p>Poppelvej 1B</p>
-            <p>7760 Hurup Thy</p>
-        </div>
-
-        <div>
-            <div class="kntkt">
-                <img src="images/icons/mail.png" alt="mail">
-                <p>example@opth.dk</p>
+        <div class="comptabfoot">
+            <div>
+                <p><strong>OPLEV THY</strong></p>
+                <p>Poppelvej 1B</p>
+                <p>7760 Hurup Thy</p>
             </div>
-            <div class="kntkt">
-                <img src="images/icons/phone.png" alt="mail">
-                <p>+45 1234 5678</p>
+
+            <div>
+                <div class="kntkt">
+                    <img src="images/icons/mail.png" alt="mail">
+                    <p>example@opth.dk</p>
+                </div>
+                <div class="kntkt">
+                    <img src="images/icons/phone.png" alt="mail">
+                    <p>+45 1234 5678</p>
+                </div>
+            </div>
+
+            <div id="scl">
+                <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
+                <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
+            </div>
+
+            <div>
+                <img src="images/logofooter.gif" alt="OplevThy">
             </div>
         </div>
-
-        <div id="scl">
-            <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
-            <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
-            <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
-            <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
-        </div>
-
-        <div>
-            <img src="images/logofooter.gif" alt="OplevThy">
-        </div>
-
     </footer>
 
 </body>

@@ -11,5 +11,130 @@
 </head>
 
 <body>
+    <header>
+        <a id="complogo" href="index.html"><img class="logo" src="images/icons/Logo175.png" alt="OplevThy"></a>
+        <a id="tablogo" href="index.html"><img class="logo" src="images/icons/Logo150.png" alt="OplevThy"></a>
+        <a id="moblogo" href="index.html"><img class="logo" src="images/icons/Logo150.png" alt="OplevThy"></a>
+
+        <div id="compheader">
+            <nav id="compnav">
+                <a href="omraade.html">Området og naturen</a>
+                <div class="dropdown">
+                    <a href="oplev.html" class="btn">Oplevelser</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Udendørs</a>
+                        <a href="#">Indendørs</a>
+                        <a href="#">Voksne</a>
+                        <a href="oplevboern.html">Børn</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="spis.html" class="btn">Spisesteder</a>
+                    <div class="dropdown-menu">
+                        <a href="rest.html">Restaurant</a>
+                        <a href="#">Café</a>
+                        <a href="#">Grill</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="overnat.html" class="btn">Overnatning</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Hotel/kro</a>
+                        <a href="#">Hostel</a>
+                        <a href="#">Camping</a>
+                        <a href="#">Udendørs</a>
+                    </div>
+                </div>
+                <a href="komrundt.html">Kom rundt</a>
+
+                <a id="planlaeg" href="planlaeg.html">Planlæg</a>
+            </nav>
+
+            <nav id="tabmobnav">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-links">
+                    <a href="#"></a>
+                    <a href="omraade.html">Området og naturen</a>
+                    <a href="oplev.html">Oplevelser</a>
+                    <a href="spis.html">Spisesteder</a>
+                    <a href="overnat.html">Overnatning</a>
+                    <a href="komrundt.html">Kom rundt</a>
+                    <a href="planlaeg.html">Planlæg min tur</a>
+                </div>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+                var navbarLinks = document.querySelector('.navbar-links');
+                var overlay = document.querySelector('.overlay');
+                navbarLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+            }
+        </script>
+    </header>
+
+    <main></main>
+
+    <footer>
+        <div class="comptabfoot">
+            <div>
+                <p><strong>OPLEV THY</strong></p>
+                <p>Poppelvej 1B</p>
+                <p>7760 Hurup Thy</p>
+            </div>
+
+            <div>
+                <div class="kntkt">
+                    <img src="images/icons/mail.png" alt="mail">
+                    <p>example@opth.dk</p>
+                </div>
+                <div class="kntkt">
+                    <img src="images/icons/phone.png" alt="phone">
+                    <p>+45 1234 5678</p>
+                </div>
+            </div>
+
+            <div id="scl">
+                <a href="#"><img src="images/icons/face.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/ig.png" alt="instagram"></a>
+                <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+
+        <div class="mobfoot">
+            <div>
+                <p><strong>OPLEV THY</strong></p>
+                <p>Poppelvej 1B</p>
+                <p>7760 Hurup Thy</p>
+            </div>
+
+            <div>
+                <div class="kntkt2">
+                    <img src="images/icons/mail20.png" alt="mail">
+                    <p>example@opth.dk</p>
+                </div>
+                <div class="kntkt2">
+                    <img src="images/icons/phone20.png" alt="phone">
+                    <p>+45 1234 5678</p>
+                </div>
+            </div>
+
+            <div id="scl2">
+                <a href="#"><img src="images/icons/face20.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/ig20.png" alt="instagram"></a>
+                <a href="#"><img src="images/icons/tiktok20.png" alt="tiktok"></a>
+                <a href="#"><img src="images/icons/twitter20.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

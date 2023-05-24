@@ -5,6 +5,7 @@
     margin: 0%;
 }
 
+
 /********* fonts *********/
 h1 {
     font-family: 'Genos', sans-serif;
@@ -90,6 +91,7 @@ nav a:hover {
     top: 10px;
     left: 50px;
     z-index: 10001;
+
 }
 
 
@@ -100,20 +102,20 @@ nav a:hover {
 }
 
 .btn {
+    /* Linket/knappen som er markør for dropdownmenuen */
     display: inline-block;
     color: #376A46;
-    padding: 0px 0px;
     border: none;
     cursor: pointer;
 }
 
 .dropdown-menu {
     display: none;
+    /* Sørger for at menuen ikke er synlig før hover */
     position: absolute;
-    justify-content: center;
+    /* Søger for at dropdown menuen ligger sig uner menupunktet*/
     border: 1px solid #000000;
     background-color: #829B6A;
-    min-width: 80px;
     padding-left: 5px;
     padding-right: 5px;
     z-index: 100;
@@ -121,25 +123,29 @@ nav a:hover {
 
 .dropdown-menu a {
     display: block;
+    /* Søger for at dropdownmenuens punkter er placeret jævnt under hinanden */
     text-align: left;
-    padding: 0;
     margin: 5px;
     color: #FFFFFF;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
+    /* Sørger for at dropdownmenuen bliver synlig ved hovereffekt */
     opacity: 0.9;
     z-index: 100;
     color: #FFFFFF;
 }
 
 .dropdown a::after {
+    /* Laver sammen med nedenstående styling animationen under hver enkelt dropdownmenu-link */
     content: "";
     position: absolute;
     left: 0;
+    /* Sørger for at placere den animerede streg direkte under linket */
     bottom: -2px;
     width: 0;
+    /* Skaber den flydende anumation fra venstre mod højre */
     height: 2px;
     background-color: #FFFFFF;
     transition: width 0.5s ease;
@@ -164,7 +170,6 @@ nav .dropdown-menu a {
 #tabmobnav .container {
     display: inline-block;
     cursor: pointer;
-    float: right;
 }
 
 .bar1,
@@ -238,7 +243,7 @@ nav .dropdown-menu a {
 .navbar-links a {
     display: block;
     height: 50px;
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
     font-family: 'Jura', sans-serif;
     font-size: 28px;
@@ -389,7 +394,7 @@ nav .dropdown-menu a {
 /******************************************** Footer ********************************************/
 .comptabfoot {
     width: 100%;
-    height: 150px;
+    height: 175px;
     background-color: #376A46;
 
     display: flex;
@@ -401,6 +406,7 @@ nav .dropdown-menu a {
     color: #FFFFFF;
     font-family: 'Jura', sans-serif;
     font-size: 24px;
+    flex-wrap: wrap;
 }
 
 .kntkt {
@@ -417,6 +423,7 @@ nav .dropdown-menu a {
     margin-left: 15px;
 }
 
+
 /******************************************** Media Query ********************************************/
 @media screen and (min-width:1150px) {
     #tabmobnav {
@@ -431,7 +438,15 @@ nav .dropdown-menu a {
         display: none;
     }
 
+    #tablogo {
+        display: none;
+    }
+
     #moblogo {
+        display: none;
+    }
+
+    .mobfoot {
         display: none;
     }
 }
@@ -459,8 +474,12 @@ nav .dropdown-menu a {
     #compnav {
         display: none;
     }
-
-     #moblogo {
+    
+    #tablogo {
+        display: none;
+    }
+    
+    #moblogo {
         display: none;
     }
 
@@ -476,6 +495,11 @@ nav .dropdown-menu a {
         display: none;
     }
 
+    .mobfoot {
+        display: none;
+    }
+
+    /********* fonts *********/
     h1 {
         font-family: 'Genos', sans-serif;
         font-size: 72px;
@@ -514,7 +538,7 @@ nav .dropdown-menu a {
     }
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:860px) {
     #complogo {
         display: none;
     }
@@ -523,19 +547,57 @@ nav .dropdown-menu a {
         display: none;
     }
 
+    #tablogo {
+        height: 125px;
+        width: 125px;
+        position: fixed;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        z-index: 10002;
+    }
+
     .comptabfoot {
         display: none;
     }
-    
-#moblogo {
-    position: fixed;
-    top: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-    z-index: 10002;
-}
 
+    footer div {
+        flex-wrap: wrap;
+    }
+
+    .mobfoot {
+        width: 100%;
+        height: 225px;
+        background-color: #376A46;
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobfoot p {
+        color: #FFFFFF;
+        font-family: 'Jura', sans-serif;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .kntkt2 {
+        display: flex;
+        justify-content: left;
+        margin: 15px;
+    }
+
+    .kntkt2 img {
+        margin-right: 15px;
+    }
+
+    #scl2 a {
+        margin-left: 15px;
+    }
+
+    /********* fonts *********/
     h1 {
         font-family: 'Genos', sans-serif;
         font-size: 38px;
@@ -559,7 +621,6 @@ nav .dropdown-menu a {
         font-family: 'Jura', sans-serif;
         font-size: 32px;
         color: #FFFFFF;
-        color: #FFFFFF;
         text-decoration: none;
     }
 
@@ -573,6 +634,8 @@ nav .dropdown-menu a {
         text-decoration: none;
         font-size: 16px;
     }
+
+
 }
 
 @media screen and (max-width:360px) {
@@ -592,12 +655,32 @@ nav .dropdown-menu a {
         display: none;
     }
 
+    #moblogo {
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        z-index: 10002;
+    }
+
     .compsitephoto {
         display: none;
     }
 
     .fourcards {
         display: none;
+    }
+
+    .comptabfoot {
+        height: 250px;
+    }
+
+
+    footer div {
+        flex-wrap: wrap;
     }
 
     .comptabfoot {
@@ -627,7 +710,6 @@ nav .dropdown-menu a {
     h4 {
         font-family: 'Jura', sans-serif;
         font-size: 32px;
-        /* color: #FFFFFF; */
         color: #FFFFFF;
         text-decoration: none;
     }

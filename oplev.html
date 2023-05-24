@@ -12,10 +12,9 @@
 
 <body>
     <header>
-        <a id="complogo" href="index.html"><img class="logo" src="images/compimg/logocomputerweb.gif"
-                alt="OplevThy"></a>
-        <a id="moblogo" href="index.html"><img class="logo" src="images/mobimg/logomobilweb.gif"
-                alt="OplevThy"></a>        
+        <a id="complogo" href="index.html"><img class="logo" src="images/icons/Logo175.png" alt="OplevThy"></a>
+        <a id="tablogo" href="index.html"><img class="logo" src="images/icons/Logo150.png" alt="OplevThy"></a>
+        <a id="moblogo" href="index.html"><img class="logo" src="images/icons/Logo150.png" alt="OplevThy"></a>
 
         <div id="compheader">
             <nav id="compnav">
@@ -86,28 +85,28 @@
 
         <div class="fourcards">
             <div>
-                <a href="#outdoor">
+                <a href="javascript:void(0);" onclick="scrollToSection('outdoor')">
                     <section class="snglcrd">
                         <img class="menupic" src="images/compimg/sitephoto/bulbjerg.jpg" alt="Bulbjerg">
                         <h4>Udendørs</h4>
                     </section>
                 </a>
 
-                <a href="#indoor">
+                <a href="javascript:void(0);" onclick="scrollToSection('indoor')">
                     <section class="snglcrd">
                         <img class="menupic" src="images/compimg/sitephoto/kanon2.jpg" alt="Kanon">
                         <h4>Indendørs</h4>
                     </section>
                 </a>
 
-                <a href="#adults">
+                <a href="javascript:void(0);" onclick="scrollToSection('adults')">
                     <section class="snglcrd">
                         <img class="menupic" src="images/compimg/sitephoto/whisky2.jpg" alt="Thy Whisky">
                         <h4>Voksne</h4>
                     </section>
                 </a>
 
-                <a href="#kids">
+                <a href="javascript:void(0);" onclick="scrollToSection('kids')">
                     <section class="snglcrd">
                         <img class="menupic" src="images/compimg/sitephoto/saft.jpg" alt="Thy Økobær">
                         <h4>Børn</h4>
@@ -225,7 +224,7 @@
                     <p>example@opth.dk</p>
                 </div>
                 <div class="kntkt">
-                    <img src="images/icons/phone.png" alt="mail">
+                    <img src="images/icons/phone.png" alt="phone">
                     <p>+45 1234 5678</p>
                 </div>
             </div>
@@ -236,12 +235,48 @@
                 <a href="#"><img src="images/icons/tiktok.png" alt="tiktok"></a>
                 <a href="#"><img src="images/icons/twitter.png" alt="twitter"></a>
             </div>
+        </div>
+
+        <div class="mobfoot">
+            <div>
+                <p><strong>OPLEV THY</strong></p>
+                <p>Poppelvej 1B</p>
+                <p>7760 Hurup Thy</p>
+            </div>
 
             <div>
-                <img src="images/logofooter.gif" alt="OplevThy">
+                <div class="kntkt2">
+                    <img src="images/icons/mail20.png" alt="mail">
+                    <p>example@opth.dk</p>
+                </div>
+                <div class="kntkt2">
+                    <img src="images/icons/phone20.png" alt="phone">
+                    <p>+45 1234 5678</p>
+                </div>
+            </div>
+
+            <div id="scl2">
+                <a href="#"><img src="images/icons/face20.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/ig20.png" alt="instagram"></a>
+                <a href="#"><img src="images/icons/tiktok20.png" alt="tiktok"></a>
+                <a href="#"><img src="images/icons/twitter20.png" alt="twitter"></a>
             </div>
         </div>
     </footer>
 
+
+    <script>
+        function scrollToSection(elementId) {
+            const element = document.getElementById(elementId);
+            const offset = 250; // Adjust the offset as needed to fit your sticky menu height
+            const position = element.offsetTop - offset;
+
+            window.scrollTo({
+                top: position,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
+
 </html>

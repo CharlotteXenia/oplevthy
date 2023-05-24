@@ -5,6 +5,9 @@
     margin: 0%;
 }
 
+main {
+    background-color: rgba(105, 127, 62, 0.25);
+    }
 
 /********* fonts *********/
 h1 {

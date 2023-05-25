@@ -24,8 +24,15 @@ h2 {
     color: #FFFFFF;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-size: 50px;
+    color: #376A46;
 
-
+}
 
 /******************************************** Header ********************************************/
 
@@ -249,13 +256,18 @@ nav .dropdown-menu a {
     color: white;
 
     padding: 10px 20px 10px 20px;
-    border-radius: 10px;
+    border-radius: 30px;
 
     transition: 0.5s;
 
     color: white;
     font-family: 'Jura', sans-serif;
     text-decoration: none;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 #planlaeg:hover {
@@ -297,12 +309,6 @@ main {
     margin-top: 50px;
 }
 
-#plan h3 {
-    font-family: 'Jura', sans-serif;
-    font-size: 50px;
-    color: #376A46;
-}
-
 #plan a {
     font-family: 'Jura', sans-serif;
     font-size: 50px;
@@ -320,15 +326,19 @@ h2 {
     background-color: #6C2960;
     color: white;
 
-    padding: 10px 25px 10px 25px;
+    padding: 8px 20px 8px 20px;
     border-radius: 30px;
     margin-top: 10px;
 
     transition: 0.5s;
 
-    color: white;
     font-family: 'Jura', sans-serif;
     text-decoration: none;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 #knap:hover {
@@ -420,13 +430,10 @@ h2 {
         display: none;
     }
 
-    #complogo {
-        display: none;
-    }
-
     #tablogo {
         display: none;
     }
+
     
     #moblogo {
         display: none;
@@ -512,9 +519,19 @@ h2 {
     }
 
     h3 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
         font-family: 'Jura', sans-serif;
-        font: 50px;
-        color: #ffffff;
+        font-size: 40px;
+        color: #FFFFFF;
+    
+    }
+
+    #plan a {
+        font-family: 'Jura', sans-serif;
+        font-size: 40px;
+        color: #FFFFFF;
     }
 
 }
@@ -541,13 +558,14 @@ h2 {
         margin-right: 35px;
     }
 
+
     h3 {
-        font-family: 'Jura', sans-serif;
-        font: 48px;
-        color: #ffffff;
+        font-size: 30px;
     }
 
-
+    #plan a {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -563,6 +581,10 @@ h2 {
     .box2 {
 
         margin-bottom: 150px;
+    }
+    
+    #knap {
+        padding: 8px 20px 8px 20px;
     }
 
     /********* fonts *********/
@@ -580,11 +602,7 @@ h2 {
         margin-right: 30px;
     }
 
-    h3 {
-        font-family: 'Jura', sans-serif;
-        font: 40px;
-        color: #ffffff;
-    }
+
 }
 
 @media screen and (max-width:500px) {
@@ -611,10 +629,13 @@ h2 {
     }
 
     h3 {
-        font-family: 'Jura', sans-serif;
-        font: 40px;
-        color: #ffffff;
+        font-size: 25px;
     }
+
+    #plan a {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -646,11 +667,6 @@ h2 {
         margin-right: 10px;
     }
 
-    h3 {
-        font-family: 'Jura', sans-serif;
-        font: 30px;
-        color: #ffffff;
-    }
 }
 
 
@@ -723,9 +739,11 @@ h2 {
     }
 
     h3 {
-        font-family: 'Jura', sans-serif;
-        font: 20px;
-        color: #ffffff;
+        font-size: 20px;    
+    }
+
+    #plan a {
+        font-size: 20px;
     }
 
 }

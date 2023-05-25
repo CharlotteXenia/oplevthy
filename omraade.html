@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,10 +81,35 @@
     </header>
 
     <main>
-        <div><img id="topphoto" src="images/compimg/topphoto/hede1.1.jpg" alt="klitplantage"></div> <!--topphoto-->
+        <div><img id="topphoto" src="images/compimg/topphoto/trane.jpg" alt="klitplantage"></div> <!--topphoto-->
+
+        <div class="fourcards">
+            <div>
+                <a href="javascript:void(0);" onclick="scrollToSection('bulbjerg')">
+                    <section class="snglcrd">
+                        <img class="menupic" src="images/compimg/sitephoto/bulbjerg1.jpg" alt="Bulbjerg">
+                        <h4>Bulbjerg</h4>
+                    </section>
+                </a>
+
+                <a href="javascript:void(0);" onclick="scrollToSection('klithede')">
+                    <section class="snglcrd">
+                        <img class="menupic" src="images/compimg/sitephoto/hede8.jpg" alt="Kanon">
+                        <h4>Klithederne</h4>
+                    </section>
+                </a>
+
+                <a href="javascript:void(0);" onclick="scrollToSection('vejle')">
+                    <section class="snglcrd">
+                        <img class="menupic" src="images/compimg/sitephoto/hanvejle.jpg" alt="Thy Whisky">
+                        <h4>Han Vejle</h4>
+                    </section>
+                </a>
+            </div>
+        </div>
 
         <div id="content">
-            <div class="box1">
+            <div class="box1 haedtext">
                 <h1>Området og naturen</h1>
                 <p>Nationalparken er et sammenhængende naturområde, der omfatter mennesker, planter og dyr. I den
                     nordlige del af nationalparken finder vi Hanstholm Vildtreservat, hvor der lever mere end 30
@@ -107,94 +131,57 @@
                 </p>
             </div> <!--textbox1-->
 
-            <div><img class="compsitephoto" src="images/compimg/sitephoto/hede3.jpg" alt="klitplantage"></div>
-            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/hedehustab.jpg" alt="klitplantage"></div>
-            <div><img class="mobsitephoto" src="images/mobimg/sitephoto/hedehusmob.jpg" alt="klitplantage"></div>
-
-
-            <div class="box2">
-                <h2>Bulbjerg</h2>
-                <p>Bulbjerg, også kendt som "Jyllands skulder", er den eneste klippe på Jylland. Udover Bornholm er det
-                    også fastlandets eneste fuglefjeld. Fra klippens top kan man, hvis vejret er klart, se både Rubjerg
-                    Knude Fyr og Hanstholm.
-                    <br><br>
-                    Udover den fantastiske udsigt over Vesterhavet, er limstensklippen også hjemsted for mange
-                    forskellige fuglearter, herunder 500 par rider, suler, kjover, lunder og mallemukker, der forsøger
-                    at yngle på klippen.
-                    <br><br>
-                    Bulbjerg er konstant udsat for erosion fra Vesterhavets kraftige bølger, der gradvist nedbryder
-                    klippen og spreder kalkstensstykkerne på den tilstødende strand.
-                    <br><br>
-                    Tidligere var Bulbjerg en ø, der var omgivet af havet og udgjorde en del af Thy, før havet trak sig
-                    tilbage. I vikingetiden blev klippen brugt som et pejlemærke, der markerede åbningen til
-                    Vesterhavet. Vikingeskibe sejlede fra Aggersborg op ad Limfjorden mod Vust og nåede til sidst
-                    Bulbjerg. I det 12. århundrede sandede ruten imidlertid til, og Limfjorden blev til en fjord.
-                    <br><br>
-                    Indtil 1978 stod der endnu en klippe ved navn Skarreklit (16 meter høj) ved siden af Bulbjerg. Den
-                    var opkaldt efter skarven, der havde bosat sig på klippen. Under en storm væltede klippen dog, og i
-                    dag når den kun lige op til vandoverfladen.
-                    <br><br>
-                    I år 1907 blev der opført et badehotel ved Bulbjerg, men under 2. verdenskrig besatte tyskerne
-                    badehotellet og byggede en radiopejle- og radarstation på stedet. Mod slutningen af besættelsen
-                    valgte de at sprænge badehotellet i luften, da det kunne bruges som pejlemærke fra havet.
-                    <br><br>
-                    Der er også en udstillingsbunker ved Bulbjerg, der fungerer som et gratis lille museum og er åbent i
-                    dagtimerne. Her kan man læse om Bulbjergs geologi, fuglefjeldet, besættelsestiden og
-                    kulturhistorien.
-                </p>
+            <div class="box1 seemore" id="topbox">
+                <section>
+                    <h2 id="bulbjerg">Bulbjerg</h2>
+                    <p>
+                        Bulbjerg er Jyllands eneste klippe og fuglefjeld. Det er udsat for erosion, men tilbyder en
+                        fantastisk udsigt og er hjemsted for forskellige fuglearter. Der var engang en nærliggende
+                        klippe kaldet Skarreklit.
+                        <br><br>
+                        Under 2. verdenskrig blev et badehotel besat og sprængt af tyskerne.
+                        Der er også en udstillingsbunker, der fungerer som et lille museum om Bulbjergs geologi og
+                        kulturhistorie.
+                    </p>
+                    <br>
+                </section>
+                <a href="bulbjerg.html">Læs mere &#8594;</a>
             </div> <!--textbox2-->
 
-            <div><img class="compsitephoto" src="images/compimg/sitephoto/bulbjerg4.jpg" alt="Bulbjerg"></div>
-            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/hedehustab.jpg" alt="Bulbjerg"></div>
-            <div><img class="mobsitephoto" src="images/mobimg/sitephoto/hedehusmob.jpg" alt="Bulbjerg"></div>
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/bulbjerg1.jpg" alt="Bulbjerg"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/bulbjerg1.jpg" alt="Bulbjerg"></div>
 
-            <div class="box1">
-                <h2>Klitplantagerne</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit ut lacus
-                    convallis
-                    elementum. Duis condimentum massa vitae purus dictum, id congue magna tempor. Suspendisse imperdiet
-                    id
-                    lectus et fermentum.
+            <div class="box2 seemore">
+                <section>
+                    <h2 id="klithede">Klithederne</h2>
+                    <p>
 
-                    Quisque vulputate faucibus diam eget laoreet. Mauris imperdiet interdum iaculis. In hac habitasse
-                    platea
-                    dictumst. Cras accumsan lectus nisl, vitae fringilla quam laoreet eu.
-
-                    Integer sed dui ac nunc volutpat laoreet. Duis condimentum, eros at sollicitudin elementum, odio
-                    magna
-                    eleifend lacus, ut facilisis ex sapien ultricies mauris.
-                    Nulla facilisi. Ut vehicula rutrum orci, at semper purus interdum ut.</p>
+                    </p>
+                    <br>
+                </section>
+                <a href="klitplan.html">Læs mere &#8594;</a>
             </div> <!--textbox3-->
 
-            <div><img class="compsitephoto" src="images/compimg/sitephoto/hede8.jpg" alt="klitplantage"></div>
-            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/bulbjergstitab.jpg" alt="klitplantage"></div>
-            <div><img class="mobsitephoto" src="images/mobimg/sitephoto/bulbjergstimob.jpg" alt="klitplantage"></div>
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/hedesticomp.jpg" alt="Thy Whisky"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/hedestitab.jpg" alt="Thy Whisky"></div>
 
-            <div class="box2">
-                <h2>Han Vejle</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit ut lacus
-                    convallis
-                    elementum. Duis condimentum massa vitae purus dictum, id congue magna tempor. Suspendisse imperdiet
-                    id
-                    lectus et fermentum.
-
-                    Quisque vulputate faucibus diam eget laoreet. Mauris imperdiet interdum iaculis. In hac habitasse
-                    platea
-                    dictumst. Cras accumsan lectus nisl, vitae fringilla quam laoreet eu.
-
-                    Integer sed dui ac nunc volutpat laoreet. Duis condimentum, eros at sollicitudin elementum, odio
-                    magna
-                    eleifend lacus, ut facilisis ex sapien ultricies mauris.
-                    Nulla facilisi. Ut vehicula rutrum orci, at semper purus interdum ut.</p>
+            <div class="box1 seemore">
+                <section>
+                    <h2 id="vejle">Han Vejle</h2>
+                    <p>
+                        Han Vejle er Danmarks længste rute i rørskove på planker i Vejlerne, hvor også
+                        der er mulighed for at nå ud i en ellers hemmelighedsfuld og lukket verden af tårnhøje tagrør.
+                    </p>
+                    <br>
+                </section>
+                <a href="hanvejle.html">Læs mere &#8594;</a>
             </div> <!--textbox4-->
 
-            <div><img class="compsitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
-            <div><img class="tabsitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
-            <div><img class="mobsitephoto" src="#" alt="Hanvejle"></div> <!--photo4-->
+            <div><img class="compsitephoto" src="images/compimg/sitephoto/hanvejle.jpg" alt="HanVejle"></div>
+            <div><img class="tabsitephoto" src="images/tabimg/sitephoto/hanvejle.jpg" alt="HanVejle"></div>
         </div>
     </main>
 
-    
     <footer>
         <div class="comptabfoot">
             <div>
@@ -249,5 +236,19 @@
         </div>
     </footer>
 
+
+    <script>
+        function scrollToSection(elementId) {
+            const element = document.getElementById(elementId);
+            const offset = 250; // Adjust the offset as needed to fit your sticky menu height
+            const position = element.offsetTop - offset;
+
+            window.scrollTo({
+                top: position,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
+
 </html>

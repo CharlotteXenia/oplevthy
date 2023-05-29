@@ -340,6 +340,10 @@ nav .dropdown-menu a {
         display: none;
     }
 
+    nav a:hover {
+        display: none;
+    }
+
     #tablogo {
         height: 112px;
         width: 112px;
@@ -361,6 +365,7 @@ nav .dropdown-menu a {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-right: 10px;
     }
 
     #mobfoot p {
@@ -376,7 +381,7 @@ nav .dropdown-menu a {
         padding-bottom: 5px;
         padding-top: 5px;
     }
-z
+
     .kntkt2 img {
         margin-right: 15px;
     }
@@ -391,6 +396,8 @@ z
         font-size: 40px;
         color: #FFFFFF;
     }
+
+    
 }
 
 @media screen and (max-width:360px) {

@@ -285,7 +285,7 @@ nav .dropdown-menu a {
         display: none;
     }
 
-    #mobfoot { /* mobilfooter */
+    .mobfoot {
         display: none;
     }
 
@@ -341,11 +341,11 @@ nav .dropdown-menu a {
     }
 
     #tablogo {
-        height: 125px;
-        width: 125px;
+        height: 112px;
+        width: 112px;
     }
 
-    #comptabfoot {
+    .comptabfoot {
         display: none;
     }
 
@@ -353,7 +353,7 @@ nav .dropdown-menu a {
         flex-wrap: wrap;
     }
 
-    #mobfoot {
+    .mobfoot {
         width: 100%;
         height: 225px;
         background-color: #376A46;

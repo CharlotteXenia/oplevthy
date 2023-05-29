@@ -123,46 +123,7 @@ h2 {
         display: none;
     }
 
-    #moblogo {
-        display: none;
-    }
-
     .mobfoot {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width:1150px) {
-    #compheader {
-        height: 50px;
-        width: 100%;
-
-        border-bottom-width: 3px;
-        border-bottom-style: solid;
-        border-bottom-color: #000000;
-        background-color: #FFFFFF;
-
-        display: flex;
-        justify-content: right;
-        align-items: center;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10000;
-    }
-
-    #compnav {
-        display: none;
-    }
-
-    #tablogo {
-        display: none;
-    }
-
-    
-    #moblogo {
         display: none;
     }
 
@@ -173,64 +134,12 @@ h2 {
         margin: 100px;
     }
 
-    #complogo {
-        display: none;
-    }
-
-    #compnav {
-        display: none;
-    }
-
-    #tablogo {
-        height: 125px;
-        width: 125px;
-        position: fixed;
-        top: 10px;
-        display: flex;
-        justify-content: center;
-        margin-left: 20px;
-        z-index: 10002;
-    }
-
-    .comptabfoot {
-        display: none;
-    }
-
-    footer div {
-        flex-wrap: wrap;
-    }
-
-    .mobfoot {
-        width: 100%;
-        height: 225px;
-        background-color: #376A46;
-    
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
     .mobfoot p {
         color: #FFFFFF;
         font-family: 'Jura', sans-serif;
         font-size: 18px;
         flex-wrap: wrap;
     }
-
-    .kntkt2 {
-        display: flex;
-        justify-content: left;
-        margin: 15px;
-    }
-
-    .kntkt2 img {
-        margin-right: 15px;
-    }
-
-    #scl2 a {
-        margin-left: 15px;
-    }
-
 
     /********* fonts *********/
     h1 {
@@ -417,17 +326,6 @@ h2 {
 
     #tablogo {
         display: none;
-    }
-
-    #moblogo {
-        height: 100px;
-        width: 100px;
-        position: fixed;
-        top: 10px;
-        display: flex;
-        justify-content: center;
-        margin-left: 20px;
-        z-index: 10002;
     }
 
     .compsitephoto {

@@ -53,12 +53,6 @@ a {
     margin-top: 75px;
 }
 
-/* #vid {
-    width: 100%;
-    height: 640px;
-    margin-top: 75px;
-} */
-
 #content {
     margin-top: 50px;
     margin-left: 12%;
@@ -82,14 +76,8 @@ a {
     margin-top: 35px;
 }
 
-.box2 {
-    height: auto;
-    width: 100%;
-    text-align: right;
-}
-
 .compsitephoto {
-    height: 475px;
+    height: auto;
     width: 100%;
 
     border-radius: 10px;
@@ -239,41 +227,6 @@ a {
 
 
 /******************************************** Media Query ********************************************/
-@media screen and (min-width:1150px) {
-    #tabmobnav {
-        display: none;
-    }
-
-    #tablogo {
-        display: none;
-    }
-
-    .mobfoot {
-        display: none;
-    }
-
-    /* .img1 {
-        display: none;
-    } */
-
-    .img2 {
-        display: none;
-    }
-
-    .img3 {
-        display: none;
-    }
-
-    .img4 {
-        display: none;
-    }
-
-    .img5 {
-        display: none;
-    }
-}
-
-
     @media screen and (max-width:1150px) {
         #compheader {
             height: 50px;
@@ -302,10 +255,6 @@ a {
             display: none;
         }
 
-        .compsitephoto {
-            display: none;
-        }
-
         .fourcards {
             display: none;
         }
@@ -318,26 +267,6 @@ a {
             width: 100%;
             height: auto;
             margin-top: 50px;
-        }
-
-        .img1 {
-            display: none;
-        }
-    
-        .img2 {
-            display: none;
-        }
-    
-        .img3 {
-            display: none;
-        }
-    
-        .img4 {
-            display: none;
-        }
-    
-        .img5 {
-            display: none;
         }
 
         /********* fonts *********/
@@ -397,10 +326,6 @@ a {
             justify-content: center;
             margin-left: 20px;
             z-index: 10002;
-        }
-
-        .comptabfoot {
-            display: none;
         }
 
         footer div {
@@ -495,19 +420,7 @@ a {
             display: none;
         }
 
-        .compsitephoto {
-            display: none;
-        }
-
         .fourcards {
-            display: none;
-        }
-
-        .comptabfoot {
-            height: 250px;
-        }
-
-        .comptabfoot {
             display: none;
         }
 
